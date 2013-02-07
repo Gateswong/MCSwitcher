@@ -1,4 +1,4 @@
-﻿MineCraft Switcher
+MineCraft Switcher
 ========
 MCSwitcher is a simple tool that can easily switch between multiple Minecraft clients, especially useful when you have a lot Minecraft clients that are in different versions, or with different Mods.
 
@@ -6,9 +6,15 @@ Put all your Minecraft clients' `.minecraft` folders into `clients`, rename them
 
 Usage
 --------
-MCSwitcher scans the `clients` folder at startup, list all sub-folders at the left of its screen. Every sub-folder in `clients` is considered as a sigle Minecraft client, witch should be the same as the `.minecraft` folder in normal installations.
+After start, you can see two columns on the main window. In the left one, all the possible clients are listed, and on the right are all the configured loaders.
 
-To use a specific client, just click to check it in the left of screen, and choose a loader at the right. MCSwitcher creates a [Symbolic Link](http://en.wikipedia.org/wiki/Symbolic_link) from the root folder to the client's, like this: `MCSwitcher/.minecraft -> MCSwitcher/clients/myMCMods-1.4.7`.
+To use a specific client, just click to check it in the left column, then choose a loader at the right.
+
+How it works
+--------
+MCSwitcher scans the default Minecraft install folder and the `clients` folder at startup, list all sub-folders at the left of its screen. Every sub-folder in `clients` is considered as a sigle Minecraft client, witch should be the same as the `.minecraft` folder in normal installations.
+
+By clicking a specific loader, MCSwitcher creates a [Symbolic Link](http://en.wikipedia.org/wiki/Symbolic_link) from the root folder to the client's, like this: `MCSwitcher/.minecraft -> MCSwitcher/clients/myMCMods-1.4.7`.
 
 This seems not work on `exFAT` filesystem, and you need to run MCSwitcher as Administrator if you're using Windows 8.
 
