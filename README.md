@@ -2,7 +2,7 @@ MineCraft Switcher
 ========
 MCSwitcher is a simple tool that can easily switch between multiple Minecraft clients, especially useful when you have a lot Minecraft clients that are in different versions, or with different Mods.
 
-Put all your Minecraft clients' `.minecraft` folders into `clients`, rename them to proper ones(e.g. `myMCMods-1.4.7` & `ServerOfJohnDoe-1.2.5`), MCSwitcher will list them out for you to choose.
+Put all your Minecraft clients' `.minecraft` folders into `clients`, rename them to proper ones(e.g. `myMCMods-1.4.7` or `ServerOfJohnDoe-1.2.5`), MCSwitcher will list them out for you to choose.
 
 Usage
 --------
@@ -40,7 +40,7 @@ MineCraft 切换器
 ========
 MCSwitcher 是一个用于在多个 Minecraft 客户端之间快速进行切换的小工具，在同时拥有多个不同版本或加载了不同 Mods 的客户端时显得尤为方便。
 
-只要将所有客户端的 `.minecraft` 文件夹放入 `clients` 中并重命名为便于识别的名称（如 `本地用模组包-1.4.7` 或 `基友生存服-1.2.5` 等，MCSwitcher 会自动将其列出以供选择。
+只要将所有客户端的 `.minecraft` 文件夹放入 `clients` 中并重命名为便于识别的名称（如 `本地用模组包-1.4.7` 或 `基友生存服-1.2.5` 等），MCSwitcher 会自动将其列出以供选择。
 
 使用
 --------
@@ -50,11 +50,11 @@ MCSwitcher 是一个用于在多个 Minecraft 客户端之间快速进行切换�
 
 工作原理
 --------
-MCSwitcher 启动时会扫描 Minecraft 的默认安装目录和 `clients` 目录，将所有的二级目录名列在主窗口左栏中。在 `clients` 目录中的每一个子目录都被视作一个 Minecraft 客户端，其内容应该和正常安装中的 `.minecraft` 相一致。
+MCSwitcher 启动时会扫描 Minecraft 的默认安装目录和 `clients` 目录，将所有的二级目录名列在主窗口左栏中。在 `clients` 目录中的每一个子目录都被视作一个 Minecraft 客户端，其内容应当同正常安装中的 `.minecraft` 目录相一致。
 
 在点击某一启动器时，MCSwitcher 创建一个从程序根目录指向客户端目录的[符号链接](http://zh.wikipedia.org/zh-cn/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5)，形如：`MCSwitcher/.minecraft -> MCSwitcher/clients/本地用模组包-1.4.7`。
 
-需注意，这一方法在 `exFAT` 文件系统上无效，而如果在 Windows 8 中运行 MCSwitcher 则需要提供管理员权限。
+需要注意，这一方法在 `exFAT` 文件系统上无效，而如果在 Windows 8 中运行 MCSwitcher 则需要提供管理员权限。
 
 启动器与 "buttons" 文件
 --------
