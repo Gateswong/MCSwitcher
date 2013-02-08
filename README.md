@@ -34,6 +34,13 @@ Here is a simple example:
         <Button Text="Patch Mods with MCPatcher" Cmd="MCPatcher.exe" />
     </Buttons>
 
+Known Issue
+--------
+When starting `Minecraft` while there is one doesn't exited. The symbol link may failed to be created. If happends, follow this:
+
+* Del the folder `%AppData%\.minecraft` and `<MCSwitcher folder>\.minecraft`
+* Run Mcswitcher.exe
+
 ----
 
 MineCraft 切换器
@@ -71,3 +78,10 @@ MCSwitcher 使用 `buttons` 文件来配置启动器按钮，只需要将所有�
         <Button Text="Minecraft 官方启动器" Cmd="Minecraft.exe" />
         <Button Text="使用 MCPatcher 安装模组" Cmd="MCPatcher.exe" />
     </Buttons>
+
+已知问题
+--------
+有一种情况下：当通过MCSwitcher运行的现有的`Minecraft`未退出前开启了新的启动操作，可能会导致符号链接建立失败。如果出现了此问题，请按照以下方式操作：
+
+* 删除`%AppData%\.minecraft`文件夹和`<MCSwitcher程序目录>\.minecraft`文件夹
+* 重新启动MCSwitcher
